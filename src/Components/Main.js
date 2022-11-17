@@ -10,7 +10,7 @@ const Main =()=> {
     const searchBook=(evt) => {
         if(evt.key==="Enter") 
         {
-            axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyC3_Dzf4oh_G3M1AAKrE6wBKx-zuJ0qk4w')
+            axios.get('https://www.googleapis.com/books/v1/volumes?q='+search+'&key=AIzaSyC3_Dzf4oh_G3M1AAKrE6wBKx-zuJ0qk4w'+'&maxResults=40')
             .then(res=>setData(res.data.items))
             .catch(err=>console.log(err))
         }
@@ -36,7 +36,7 @@ const Main =()=> {
             </div>
             <div className="container">
                 {
-                    <Card book={bookData}/>
+                    <Card book= {bookData}/>
                 }
             </div>
         </>
