@@ -31,7 +31,6 @@ const Main =()=> {
                         />
                         <button><BiSearchAlt/></button>
                     </div>
-                    <img src='./images/book1.jpg' alt='picture-of-books'/>
                 </div>
             </div>
             <div className="container">
